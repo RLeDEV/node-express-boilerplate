@@ -1,0 +1,32 @@
+{
+	"name": "nodeboilerplate",
+	"version": "1.0.0",
+	"description": "NodeJS Express boilerplate",
+	"main": "index.js",
+	"scripts": {
+		"start": "node src/app.js",
+		"pack": "zip -r <project_name>.zip package.json package-lock.json src",
+		"test": "mocha --recursive --timeout 10000"
+	},
+	"keywords": [],
+	"author": "Raz Levy",
+	"license": "MIT",
+	"dependencies": {
+		"express": "4.17.1",
+		"express-validator": "6.6.1",
+		"knex": "0.95.7",
+		"mysql": "2.17.1",
+		"mysql2": "2.1.0",
+		"objection": "2.0.10"
+	},
+	"devDependencies": {
+		"mocha": "8.4.0",
+		"moxios": "0.4.0",
+		"nodemon": "2.0.12",
+		"rewire": "5.0.0",
+		"serverless-offline": "6.9.0",
+		"should": "13.2.3",
+		"sinon": "9.2.3",
+		"supertest": "4.0.2"
+	}
+}
